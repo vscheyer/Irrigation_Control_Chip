@@ -1,0 +1,19 @@
+Design Name: mux
+Run Directory: /openLANE_flow/designs/mux/runs/27-04_23-15
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openLANE_flow/designs/mux/runs/27-04_23-15/reports/magic//37-magic.drc
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/designs/mux/runs/27-04_23-15/results/lvs/mux.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openLANE_flow/designs/mux/runs/27-04_23-15/reports/routing//39-antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0

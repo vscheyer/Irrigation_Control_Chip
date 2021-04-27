@@ -1,0 +1,19 @@
+Notice 0: Reading LEF file:  /openLANE_flow/designs/mux/runs/27-04_23-15/tmp/merged.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 440 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/mux/runs/27-04_23-15/tmp/merged.lef
+Notice 0: 
+Reading DEF file: /openLANE_flow/designs/mux/runs/27-04_23-15/results/routing/mux.def
+Notice 0: Design: mux
+Notice 0:     Created 17 pins.
+Notice 0:     Created 102 components and 415 component-terminals.
+Notice 0:     Created 2 special nets and 0 connections.
+Notice 0:     Created 14 nets and 21 connections.
+Notice 0: Finished DEF file: /openLANE_flow/designs/mux/runs/27-04_23-15/results/routing/mux.def
+Top-level design name: mux
+Default power net:  VPWR
+Default ground net: VGND
+Found a total of 1 power ports.
+Found a total of 1 ground ports.
+Modified power connections of 102 cells (Remaining: 0 ).

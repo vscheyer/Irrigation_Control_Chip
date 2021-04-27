@@ -1,0 +1,168 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO mux
+  CLASS BLOCK ;
+  FOREIGN mux ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 34.165 BY 54.885 ;
+  PIN address0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 23.090 50.885 23.370 54.885 ;
+    END
+  END address0
+  PIN address1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 2.390 0.000 2.670 4.000 ;
+    END
+  END address1
+  PIN in0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 30.165 10.240 34.165 10.840 ;
+    END
+  END in0
+  PIN in1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 30.165 37.440 34.165 38.040 ;
+    END
+  END in1
+  PIN in2
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 27.240 4.000 27.840 ;
+    END
+  END in2
+  PIN in3
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 4.690 50.885 4.970 54.885 ;
+    END
+  END in3
+  PIN out
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 18.490 0.000 18.770 4.000 ;
+    END
+  END out
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 23.990 10.640 25.590 43.760 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 16.280 10.640 17.880 43.760 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 8.575 10.640 10.175 43.760 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 37.445 28.520 39.045 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 26.405 28.520 28.005 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 15.360 28.520 16.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 20.135 10.640 21.735 43.760 ;
+    END
+  END VGND
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 12.430 10.640 14.030 43.760 ;
+    END
+  END VGND
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 31.925 28.520 33.525 ;
+    END
+  END VGND
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 20.880 28.520 22.480 ;
+    END
+  END VGND
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 28.520 43.605 ;
+      LAYER met1 ;
+        RECT 2.370 10.640 28.520 43.760 ;
+      LAYER met2 ;
+        RECT 2.400 50.605 4.410 50.885 ;
+        RECT 5.250 50.605 22.810 50.885 ;
+        RECT 23.650 50.605 26.590 50.885 ;
+        RECT 2.400 4.280 26.590 50.605 ;
+        RECT 2.950 4.000 18.210 4.280 ;
+        RECT 19.050 4.000 26.590 4.280 ;
+      LAYER met3 ;
+        RECT 4.000 38.440 30.165 43.685 ;
+        RECT 4.000 37.040 29.765 38.440 ;
+        RECT 4.000 28.240 30.165 37.040 ;
+        RECT 4.400 26.840 30.165 28.240 ;
+        RECT 4.000 11.240 30.165 26.840 ;
+        RECT 4.000 10.375 29.765 11.240 ;
+  END
+END mux
+END LIBRARY
+

@@ -1,0 +1,57 @@
+VERSION 5.8 ;
+DIVIDERCHAR "/" ;
+BUSBITCHARS "[]" ;
+DESIGN mux ;
+UNITS DISTANCE MICRONS 1000 ;
+DIEAREA ( 0 0 ) ( 19560 30280 ) ;
+ROW ROW_0 unithd 5520 10880 FS DO 18 BY 1 STEP 460 0 ;
+ROW ROW_1 unithd 5520 13600 N DO 18 BY 1 STEP 460 0 ;
+ROW ROW_2 unithd 5520 16320 FS DO 18 BY 1 STEP 460 0 ;
+TRACKS X 230 DO 43 STEP 460 LAYER li1 ;
+TRACKS Y 170 DO 89 STEP 340 LAYER li1 ;
+TRACKS X 170 DO 58 STEP 340 LAYER met1 ;
+TRACKS Y 170 DO 89 STEP 340 LAYER met1 ;
+TRACKS X 230 DO 43 STEP 460 LAYER met2 ;
+TRACKS Y 230 DO 66 STEP 460 LAYER met2 ;
+TRACKS X 340 DO 29 STEP 680 LAYER met3 ;
+TRACKS Y 340 DO 45 STEP 680 LAYER met3 ;
+TRACKS X 460 DO 21 STEP 920 LAYER met4 ;
+TRACKS Y 460 DO 33 STEP 920 LAYER met4 ;
+TRACKS X 1700 DO 6 STEP 3400 LAYER met5 ;
+TRACKS Y 1700 DO 9 STEP 3400 LAYER met5 ;
+COMPONENTS 11 ;
+    - _4_ sky130_fd_sc_hd__inv_2 ;
+    - _5_ sky130_fd_sc_hd__o221a_2 ;
+    - _6_ sky130_fd_sc_hd__inv_2 ;
+    - _7_ sky130_fd_sc_hd__o221a_2 ;
+    - _8_ sky130_fd_sc_hd__or2_2 ;
+    - PHY_0 sky130_fd_sc_hd__decap_3 + FIXED ( 5520 10880 ) FS ;
+    - PHY_1 sky130_fd_sc_hd__decap_3 + FIXED ( 12420 10880 ) S ;
+    - PHY_2 sky130_fd_sc_hd__decap_3 + FIXED ( 5520 13600 ) N ;
+    - PHY_3 sky130_fd_sc_hd__decap_3 + FIXED ( 12420 13600 ) FN ;
+    - PHY_4 sky130_fd_sc_hd__decap_3 + FIXED ( 5520 16320 ) FS ;
+    - PHY_5 sky130_fd_sc_hd__decap_3 + FIXED ( 12420 16320 ) S ;
+END COMPONENTS
+PINS 7 ;
+    - address0 + NET address0 + DIRECTION INPUT + USE SIGNAL + PLACED ( 11730 28280 ) N + LAYER met2 ( -140 -2000 ) ( 140 2000 ) ;
+    - address1 + NET address1 + DIRECTION INPUT + USE SIGNAL + PLACED ( 2530 2000 ) N + LAYER met2 ( -140 -2000 ) ( 140 2000 ) ;
+    - in0 + NET in0 + DIRECTION INPUT + USE SIGNAL + PLACED ( 17560 7140 ) N + LAYER met3 ( -2000 -300 ) ( 2000 300 ) ;
+    - in1 + NET in1 + DIRECTION INPUT + USE SIGNAL + PLACED ( 17560 20740 ) N + LAYER met3 ( -2000 -300 ) ( 2000 300 ) ;
+    - in2 + NET in2 + DIRECTION INPUT + USE SIGNAL + PLACED ( 2000 13940 ) N + LAYER met3 ( -2000 -300 ) ( 2000 300 ) ;
+    - in3 + NET in3 + DIRECTION INPUT + USE SIGNAL + PLACED ( 2530 28280 ) N + LAYER met2 ( -140 -2000 ) ( 140 2000 ) ;
+    - out + NET out + DIRECTION OUTPUT + USE SIGNAL + PLACED ( 11730 2000 ) N + LAYER met2 ( -140 -2000 ) ( 140 2000 ) ;
+END PINS
+NETS 11 ;
+    - address0 ( PIN address0 ) ( _7_ B1 ) ( _5_ B1 ) ( _4_ A ) + USE SIGNAL ;
+    - address1 ( PIN address1 ) ( _6_ A ) ( _5_ C1 ) + USE SIGNAL ;
+    - in0 ( PIN in0 ) ( _7_ B2 ) + USE SIGNAL ;
+    - in1 ( PIN in1 ) ( _7_ A1 ) + USE SIGNAL ;
+    - in2 ( PIN in2 ) ( _5_ B2 ) + USE SIGNAL ;
+    - in3 ( PIN in3 ) ( _5_ A2 ) + USE SIGNAL ;
+    - out ( PIN out ) ( _8_ X ) + USE SIGNAL ;
+    - _0_ ( _7_ C1 ) ( _6_ Y ) + USE SIGNAL ;
+    - _1_ ( _8_ B ) ( _7_ X ) + USE SIGNAL ;
+    - _2_ ( _7_ A2 ) ( _5_ A1 ) ( _4_ Y ) + USE SIGNAL ;
+    - _3_ ( _8_ A ) ( _5_ X ) + USE SIGNAL ;
+END NETS
+END DESIGN

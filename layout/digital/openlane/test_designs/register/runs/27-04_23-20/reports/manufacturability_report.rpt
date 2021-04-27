@@ -1,0 +1,19 @@
+Design Name: register
+Run Directory: /openLANE_flow/designs/register/runs/27-04_23-20
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openLANE_flow/designs/register/runs/27-04_23-20/reports/magic//37-magic.drc
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/designs/register/runs/27-04_23-20/results/lvs/register.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openLANE_flow/designs/register/runs/27-04_23-20/reports/routing//39-antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0

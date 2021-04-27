@@ -1,0 +1,5 @@
+0-prep 0h0m0s481ms
+1-prep 0h0m2s106ms
+2-yosys 0h0m1s51ms
+3-opensta 0h0m1s272ms
+4-verilog2def_openroad 0h0m1s611ms

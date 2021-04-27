@@ -1,0 +1,1 @@
+lvs {/openLANE_flow/designs/mux/runs/27-04_23-15/results/magic/mux.spice mux} {/openLANE_flow/designs/mux/runs/27-04_23-15/results/lvs/mux.lvs.powered.v mux} /home/vscheyer/pdks/openlane/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl /openLANE_flow/designs/mux/runs/27-04_23-15/results/lvs/mux.lvs.lef.log -json

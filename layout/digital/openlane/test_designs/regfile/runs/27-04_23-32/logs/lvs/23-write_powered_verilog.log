@@ -1,0 +1,19 @@
+Notice 0: Reading LEF file:  /openLANE_flow/designs/regfile/runs/27-04_23-32/tmp/merged.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 440 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/regfile/runs/27-04_23-32/tmp/merged.lef
+Notice 0: 
+Reading DEF file: /openLANE_flow/designs/regfile/runs/27-04_23-32/results/routing/register.def
+Notice 0: Design: register
+Notice 0:     Created 14 pins.
+Notice 0:     Created 98 components and 393 component-terminals.
+Notice 0:     Created 2 special nets and 0 connections.
+Notice 0:     Created 9 nets and 15 connections.
+Notice 0: Finished DEF file: /openLANE_flow/designs/regfile/runs/27-04_23-32/results/routing/register.def
+Top-level design name: register
+Default power net:  VPWR
+Default ground net: VGND
+Found a total of 1 power ports.
+Found a total of 1 ground ports.
+Modified power connections of 98 cells (Remaining: 0 ).

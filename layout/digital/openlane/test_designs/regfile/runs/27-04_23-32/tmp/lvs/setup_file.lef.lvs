@@ -1,0 +1,1 @@
+lvs {/openLANE_flow/designs/regfile/runs/27-04_23-32/results/magic/register.spice register} {/openLANE_flow/designs/regfile/runs/27-04_23-32/results/lvs/register.lvs.powered.v register} /home/vscheyer/pdks/openlane/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl /openLANE_flow/designs/regfile/runs/27-04_23-32/results/lvs/register.lvs.lef.log -json

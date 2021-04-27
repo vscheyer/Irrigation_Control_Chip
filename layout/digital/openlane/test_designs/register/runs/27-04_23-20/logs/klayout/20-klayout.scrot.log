@@ -1,0 +1,6 @@
+Using Techfile: /home/vscheyer/pdks/openlane/pdks/sky130A/libs.tech/klayout/sky130A.lyt
+Using layout file: /openLANE_flow/designs/register/runs/27-04_23-20/results/routing/register.def
+[INFO] Reading tech file: /home/vscheyer/pdks/openlane/pdks/sky130A/libs.tech/klayout/sky130A.lyt
+[INFO] Reading Layout file: /openLANE_flow/designs/register/runs/27-04_23-20/results/routing/register.def
+[INFO] Writing out PNG screenshot '/openLANE_flow/designs/register/runs/27-04_23-20/results/routing/register.def.png'
+Done
