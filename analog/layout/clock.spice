@@ -1,0 +1,27 @@
+* SPICE3 file created from clock.ext - technology: sky130A
+
+
+* Top level circuit clock
+
+X0 a_38980_3200# a_38660_7140# VN sky130_fd_pr__res_xhigh_po w=350000u l=1.75e+07u
+X1 a_39620_3200# a_39940_7140# VN sky130_fd_pr__res_xhigh_po w=350000u l=1.75e+07u
+X2 a_37720_2790# crystal1 VP VP sky130_fd_pr__pfet_01v8 ad=1e+12p pd=6e+06u as=3.5e+12p ps=1.7e+07u w=1e+06u l=150000u
+X3 clk a_38450_2190# VN VN sky130_fd_pr__nfet_01v8 ad=2.5e+12p pd=1.1e+07u as=3.5e+12p ps=1.7e+07u w=5e+06u l=500000u
+X4 a_38450_2190# crystal2 VN VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=150000u
+X5 VN crystal2 a_37720_2790# VP sky130_fd_pr__pfet_01v8 ad=1.5e+12p pd=9e+06u as=0p ps=0u w=1e+06u l=150000u
+X6 a_37700_3200# a_37380_7140# VN sky130_fd_pr__res_xhigh_po w=350000u l=1.75e+07u
+X7 crystal2 crystal1 a_37720_2790# VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=150000u
+X8 a_37720_2190# crystal1 VN VN sky130_fd_pr__nfet_01v8 ad=1e+12p pd=6e+06u as=0p ps=0u w=1e+06u l=150000u
+X9 a_37700_3200# a_38020_7140# VN sky130_fd_pr__res_xhigh_po w=350000u l=1.75e+07u
+X10 crystal2 a_39940_7140# VN sky130_fd_pr__res_xhigh_po w=350000u l=1.75e+07u
+X11 crystal1 a_37380_7140# VN sky130_fd_pr__res_xhigh_po w=350000u l=1.75e+07u
+X12 a_38340_3200# a_38020_7140# VN sky130_fd_pr__res_xhigh_po w=350000u l=1.75e+07u
+X13 VP crystal2 a_37720_2190# VN sky130_fd_pr__nfet_01v8 ad=1e+12p pd=6e+06u as=0p ps=0u w=1e+06u l=150000u
+X14 a_38980_3200# a_39300_7140# VN sky130_fd_pr__res_xhigh_po w=350000u l=1.75e+07u
+X15 crystal2 crystal1 a_37720_2190# VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=150000u
+X16 VP a_38450_2190# clk VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=2.5e+12p ps=1.1e+07u w=5e+06u l=500000u
+X17 a_38340_3200# a_38660_7140# VN sky130_fd_pr__res_xhigh_po w=350000u l=1.75e+07u
+X18 a_39620_3200# a_39300_7140# VN sky130_fd_pr__res_xhigh_po w=350000u l=1.75e+07u
+X19 a_38450_2190# crystal2 VP VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=150000u
+.end
+
