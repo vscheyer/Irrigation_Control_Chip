@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 27578 29722
+string GDS_FILE /openLANE_flow/designs/clk_divider/runs/10-05_03-03/results/magic/clk_divider.gds
+string GDS_END 401616
+string GDS_START 72386
+<< end >>

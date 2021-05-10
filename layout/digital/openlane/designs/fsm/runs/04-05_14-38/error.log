@@ -1,0 +1,8 @@
+during executing: "openroad -exit /openLANE_flow/scripts/openroad/or_opendp.tcl |& tee >&@stdout /openLANE_flow/designs/fsm/runs/04-05_14-38/logs/placement/11-opendp.log"
+Last 10 lines:
+child process exited abnormally
+
+during executing: "openroad -exit /openLANE_flow/scripts/openroad/or_opendp.tcl |& tee >&@stdout /openLANE_flow/designs/fsm/runs/04-05_14-38/logs/placement/21-opendp.log"
+Last 10 lines:
+child process exited abnormally
+

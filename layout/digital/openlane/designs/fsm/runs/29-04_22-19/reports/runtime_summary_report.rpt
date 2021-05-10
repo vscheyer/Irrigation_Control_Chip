@@ -1,0 +1,9 @@
+0-prep 0h0m0s452ms
+1-yosys 0h0m1s479ms
+2-opensta 0h0m1s244ms
+3-verilog2def_openroad 0h0m1s523ms
+4-ioPlacer 0h0m1s170ms
+5-tapcell 0h0m1s172ms
+6-klayout_scrot 0h0m4s267ms
+7-pdn 0h0m1s534ms
+8-replace 0h0m0s256ms

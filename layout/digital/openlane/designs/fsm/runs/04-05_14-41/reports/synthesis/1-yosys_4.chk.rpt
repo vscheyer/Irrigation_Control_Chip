@@ -1,0 +1,5 @@
+
+27. Executing CHECK pass (checking for obvious problems).
+checking module fsm..
+Warning: Wire fsm.\water_toggle is used but has no driver.
+found and reported 1 problems.

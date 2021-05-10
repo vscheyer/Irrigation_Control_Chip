@@ -1,0 +1,26 @@
+
+28. Printing statistics.
+
+=== fsm ===
+
+   Number of wires:                 22
+   Number of wire bits:             23
+   Number of public wires:          11
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 14
+     sky130_fd_sc_hd__a211o_2        1
+     sky130_fd_sc_hd__dfxtp_2        3
+     sky130_fd_sc_hd__inv_2          3
+     sky130_fd_sc_hd__nor2_2         1
+     sky130_fd_sc_hd__nor3_2         1
+     sky130_fd_sc_hd__o211a_2        1
+     sky130_fd_sc_hd__o21a_2         1
+     sky130_fd_sc_hd__or2b_2         1
+     sky130_fd_sc_hd__or3_2          1
+     sky130_fd_sc_hd__or4b_2         1
+
+   Chip area for module '\fsm': 146.390400
+

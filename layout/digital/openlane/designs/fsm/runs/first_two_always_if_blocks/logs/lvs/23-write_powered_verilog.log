@@ -1,0 +1,19 @@
+Notice 0: Reading LEF file:  /openLANE_flow/designs/fsm/runs/29-04_15-15/tmp/merged.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 440 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/fsm/runs/29-04_15-15/tmp/merged.lef
+Notice 0: 
+Reading DEF file: /openLANE_flow/designs/fsm/runs/29-04_15-15/results/routing/fsm.def
+Notice 0: Design: fsm
+Notice 0:     Created 20 pins.
+Notice 0:     Created 114 components and 494 component-terminals.
+Notice 0:     Created 2 special nets and 0 connections.
+Notice 0:     Created 28 nets and 52 connections.
+Notice 0: Finished DEF file: /openLANE_flow/designs/fsm/runs/29-04_15-15/results/routing/fsm.def
+Top-level design name: fsm
+Default power net:  VPWR
+Default ground net: VGND
+Found a total of 1 power ports.
+Found a total of 1 ground ports.
+Modified power connections of 114 cells (Remaining: 0 ).

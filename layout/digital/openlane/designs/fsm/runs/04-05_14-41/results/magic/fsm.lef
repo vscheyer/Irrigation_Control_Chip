@@ -1,0 +1,198 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO fsm
+  CLASS BLOCK ;
+  FOREIGN fsm ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 150.120 BY 160.840 ;
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 52.990 0.000 53.270 4.000 ;
+    END
+  END clk
+  PIN l_sense
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 96.690 156.840 96.970 160.840 ;
+    END
+  END l_sense
+  PIN l_thresh[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 46.090 156.840 46.370 160.840 ;
+    END
+  END l_thresh[0]
+  PIN l_thresh[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 2.390 0.000 2.670 4.000 ;
+    END
+  END l_thresh[1]
+  PIN m_sense
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 147.290 156.840 147.570 160.840 ;
+    END
+  END m_sense
+  PIN m_thresh_1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 74.840 4.000 75.440 ;
+    END
+  END m_thresh_1
+  PIN m_thresh_2
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 149.640 4.000 150.240 ;
+    END
+  END m_thresh_2
+  PIN water_time_long
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 103.590 0.000 103.870 4.000 ;
+    END
+  END water_time_long
+  PIN water_time_short
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 146.120 10.240 150.120 10.840 ;
+    END
+  END water_time_short
+  PIN water_toggle
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 146.120 85.040 150.120 85.640 ;
+    END
+  END water_toggle
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 120.485 10.640 122.085 149.840 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 74.180 10.640 75.780 149.840 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 27.875 10.640 29.475 149.840 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 125.440 144.440 127.040 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 79.200 144.440 80.800 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 32.960 144.440 34.560 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 97.335 10.640 98.935 149.840 ;
+    END
+  END VGND
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 51.025 10.640 52.625 149.840 ;
+    END
+  END VGND
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 102.320 144.440 103.920 ;
+    END
+  END VGND
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 56.080 144.440 57.680 ;
+    END
+  END VGND
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 144.440 149.685 ;
+      LAYER met1 ;
+        RECT 2.370 10.640 147.590 149.840 ;
+      LAYER met2 ;
+        RECT 2.400 156.560 45.810 156.840 ;
+        RECT 46.650 156.560 96.410 156.840 ;
+        RECT 97.250 156.560 147.010 156.840 ;
+        RECT 2.400 4.280 147.560 156.560 ;
+        RECT 2.950 4.000 52.710 4.280 ;
+        RECT 53.550 4.000 103.310 4.280 ;
+        RECT 104.150 4.000 147.560 4.280 ;
+      LAYER met3 ;
+        RECT 4.400 149.240 146.120 150.105 ;
+        RECT 4.000 86.040 146.120 149.240 ;
+        RECT 4.000 84.640 145.720 86.040 ;
+        RECT 4.000 75.840 146.120 84.640 ;
+        RECT 4.400 74.440 146.120 75.840 ;
+        RECT 4.000 11.240 146.120 74.440 ;
+        RECT 4.000 10.375 145.720 11.240 ;
+      LAYER met4 ;
+        RECT 29.875 10.640 50.625 149.840 ;
+        RECT 53.025 10.640 73.780 149.840 ;
+        RECT 76.180 10.640 96.935 149.840 ;
+  END
+END fsm
+END LIBRARY
+

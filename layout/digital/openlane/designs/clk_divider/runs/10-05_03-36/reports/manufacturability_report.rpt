@@ -1,0 +1,19 @@
+Design Name: clk_divider
+Run Directory: /openLANE_flow/designs/clk_divider/runs/10-05_03-36
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openLANE_flow/designs/clk_divider/runs/10-05_03-36/reports/magic//39-magic.drc
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/designs/clk_divider/runs/10-05_03-36/results/lvs/clk_divider.lvs_parsed.lef.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openLANE_flow/designs/clk_divider/runs/10-05_03-36/reports/routing//41-antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0

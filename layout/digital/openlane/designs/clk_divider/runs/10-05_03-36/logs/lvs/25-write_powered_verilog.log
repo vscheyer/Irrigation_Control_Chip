@@ -1,0 +1,19 @@
+Notice 0: Reading LEF file:  /openLANE_flow/designs/clk_divider/runs/10-05_03-36/tmp/merged.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 440 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/clk_divider/runs/10-05_03-36/tmp/merged.lef
+Notice 0: 
+Reading DEF file: /openLANE_flow/designs/clk_divider/runs/10-05_03-36/results/routing/clk_divider.def
+Notice 0: Design: clk_divider
+Notice 0:     Created 12 pins.
+Notice 0:     Created 2075 components and 8032 component-terminals.
+Notice 0:     Created 2 special nets and 0 connections.
+Notice 0:     Created 109 nets and 319 connections.
+Notice 0: Finished DEF file: /openLANE_flow/designs/clk_divider/runs/10-05_03-36/results/routing/clk_divider.def
+Top-level design name: clk_divider
+Default power net:  VPWR
+Default ground net: VGND
+Found a total of 1 power ports.
+Found a total of 1 ground ports.
+Modified power connections of 2075 cells (Remaining: 0 ).

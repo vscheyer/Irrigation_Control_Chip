@@ -1,0 +1,7 @@
+Using Techfile: /home/vscheyer/pdks/openlane/pdks/sky130A/libs.tech/klayout/sky130A.lyt
+Using layout file: /openLANE_flow/designs/clk_divider/runs/10-05_03-36/results/klayout/clk_divider.xor.gds
+[INFO] Reading tech file: /home/vscheyer/pdks/openlane/pdks/sky130A/libs.tech/klayout/sky130A.lyt
+[INFO] Reading Layout file: /openLANE_flow/designs/clk_divider/runs/10-05_03-36/results/klayout/clk_divider.xor.gds
+Warning: Record length larger than 0x8000 encountered: interpreting as unsigned (position=2101878, record number=154064, cell=XOR)
+[INFO] Writing out PNG screenshot '/openLANE_flow/designs/clk_divider/runs/10-05_03-36/results/klayout/clk_divider.xor.gds.png'
+Done

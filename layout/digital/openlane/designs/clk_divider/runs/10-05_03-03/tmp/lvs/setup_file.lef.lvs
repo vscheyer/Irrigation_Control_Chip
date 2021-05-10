@@ -1,0 +1,1 @@
+lvs {/openLANE_flow/designs/clk_divider/runs/10-05_03-03/results/magic/clk_divider.spice clk_divider} {/openLANE_flow/designs/clk_divider/runs/10-05_03-03/results/lvs/clk_divider.lvs.powered.v clk_divider} /home/vscheyer/pdks/openlane/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl /openLANE_flow/designs/clk_divider/runs/10-05_03-03/results/lvs/clk_divider.lvs.lef.log -json

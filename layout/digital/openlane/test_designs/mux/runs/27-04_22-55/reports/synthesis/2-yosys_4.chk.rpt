@@ -1,5 +1,0 @@
-
-27. Executing CHECK pass (checking for obvious problems).
-checking module mux..
-Warning: Wire mux.\out is used but has no driver.
-found and reported 1 problems.

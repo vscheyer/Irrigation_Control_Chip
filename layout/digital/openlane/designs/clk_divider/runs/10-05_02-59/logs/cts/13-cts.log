@@ -1,0 +1,28 @@
+OpenROAD 0.9.0 1415572a73
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Notice 0: Reading LEF file:  /openLANE_flow/designs/clk_divider/runs/10-05_02-59/tmp/merged_unpadded.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 440 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/clk_divider/runs/10-05_02-59/tmp/merged_unpadded.lef
+Warning: /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib line 31, default_operating_condition tt_025C_1v80 not found.
+Notice 0: 
+Reading DEF file: /openLANE_flow/designs/clk_divider/runs/10-05_02-59/results/placement/clk_divider.placement.def
+Notice 0: Design: clk_divider
+Notice 0:     Created 4 pins.
+Notice 0:     Created 376 components and 1264 component-terminals.
+Notice 0:     Created 2 special nets and 0 connections.
+Notice 0:     Created 69 nets and 165 connections.
+Notice 0: Finished DEF file: /openLANE_flow/designs/clk_divider/runs/10-05_02-59/results/placement/clk_divider.placement.def
+[WARNING STA-0337] port 'clk' not found.
+[INFO]: Setting output delay to: 10.0
+[INFO]: Setting input delay to: 10.0
+[WARNING STA-0337] port 'clk' not found.
+[INFO]: Setting load to: 0.01765
+[INFO]: Configuring cts characterization...
+[INFO]: Performing clock tree synthesis...
+[INFO]: Looking for the following net(s): clk
+[INFO]: Running Clock Tree Synthesis...
+[ERROR UKN-0000] Error when finding -clk_nets in DB!
+Error: or_cts.tcl, 57 UKN-0000

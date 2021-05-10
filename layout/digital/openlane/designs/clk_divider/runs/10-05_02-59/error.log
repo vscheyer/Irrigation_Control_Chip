@@ -1,0 +1,4 @@
+during executing: "openroad -exit /openLANE_flow/scripts/openroad/or_cts.tcl |& tee >&@stdout /openLANE_flow/designs/clk_divider/runs/10-05_02-59/logs/cts/13-cts.log"
+Last 10 lines:
+child process exited abnormally
+

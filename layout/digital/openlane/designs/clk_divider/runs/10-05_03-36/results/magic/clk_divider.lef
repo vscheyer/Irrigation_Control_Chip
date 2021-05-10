@@ -1,0 +1,124 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO clk_divider
+  CLASS BLOCK ;
+  FOREIGN clk_divider ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 157.570 BY 168.290 ;
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 154.190 164.290 154.470 168.290 ;
+    END
+  END clk
+  PIN clock_out
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 2.390 0.000 2.670 4.000 ;
+    END
+  END clock_out
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 126.620 10.640 128.220 155.280 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 77.860 10.640 79.460 155.280 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 29.100 10.640 30.700 155.280 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 129.975 151.800 131.575 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 81.920 151.800 83.520 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 33.865 151.800 35.465 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 102.240 10.640 103.840 155.280 ;
+    END
+  END VGND
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 53.480 10.640 55.080 155.280 ;
+    END
+  END VGND
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 105.945 151.800 107.545 ;
+    END
+  END VGND
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met5 ;
+        RECT 5.520 57.895 151.800 59.495 ;
+    END
+  END VGND
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 151.800 155.125 ;
+      LAYER met1 ;
+        RECT 2.370 10.640 154.490 155.280 ;
+      LAYER met2 ;
+        RECT 2.400 164.010 153.910 164.290 ;
+        RECT 2.400 4.280 154.460 164.010 ;
+        RECT 2.950 4.000 154.460 4.280 ;
+      LAYER met3 ;
+        RECT 29.100 10.715 128.220 155.205 ;
+      LAYER met5 ;
+        RECT 5.520 109.145 151.800 128.375 ;
+        RECT 5.520 85.120 151.800 104.345 ;
+        RECT 5.520 61.095 151.800 80.320 ;
+  END
+END clk_divider
+END LIBRARY
+

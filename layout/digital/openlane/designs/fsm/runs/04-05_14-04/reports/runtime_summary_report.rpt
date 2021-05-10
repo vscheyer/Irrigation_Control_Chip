@@ -1,0 +1,17 @@
+0-prep 0h0m0s530ms
+1-yosys 0h0m1s921ms
+2-opensta 0h0m1s519ms
+3-verilog2def_openroad 0h0m2s57ms
+4-ioPlacer 0h0m1s485ms
+5-tapcell 0h0m1s543ms
+6-klayout_scrot 0h0m4s757ms
+7-pdn 0h0m2s49ms
+8-prep 0h0m2s244ms
+8-replace 0h0m0s372ms
+9-opensta 0h0m1s472ms
+10-verilog2def_openroad 0h0m1s834ms
+11-ioPlacer 0h0m1s423ms
+12-tapcell 0h0m1s600ms
+13-klayout_scrot 0h0m4s432ms
+14-pdn 0h0m1s781ms
+15-replace 0h0m0s286ms

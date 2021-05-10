@@ -1,0 +1,17 @@
+Notice 0: Reading LEF file:  /openLANE_flow/designs/fsm/runs/04-05_14-28/tmp/merged_unpadded.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 440 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/fsm/runs/04-05_14-28/tmp/merged_unpadded.lef
+Notice 0: 
+Reading DEF file: /openLANE_flow/designs/fsm/runs/04-05_14-28/tmp/floorplan/14-pdn.def
+Notice 0: Design: fsm
+Notice 0:     Created 12 pins.
+Notice 0:     Created 132 components and 839 component-terminals.
+Notice 0:     Created 2 special nets and 0 connections.
+Notice 0:     Created 110 nets and 325 connections.
+Notice 0: Finished DEF file: /openLANE_flow/designs/fsm/runs/04-05_14-28/tmp/floorplan/14-pdn.def
+Design name: fsm
+Core Area Boundaries: 5520 10880 28520 43520
+Number of instances 132
+Placed 101 instances

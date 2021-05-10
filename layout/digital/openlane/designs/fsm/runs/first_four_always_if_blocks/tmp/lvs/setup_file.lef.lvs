@@ -1,0 +1,1 @@
+lvs {/openLANE_flow/designs/fsm/runs/29-04_15-21/results/magic/fsm.spice fsm} {/openLANE_flow/designs/fsm/runs/29-04_15-21/results/lvs/fsm.lvs.powered.v fsm} /home/vscheyer/pdks/openlane/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl /openLANE_flow/designs/fsm/runs/29-04_15-21/results/lvs/fsm.lvs.lef.log -json

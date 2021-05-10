@@ -1,0 +1,6 @@
+<< properties >>
+string FIXED_BBOX 0 0 6833 10977
+string GDS_FILE /openLANE_flow/designs/fsm/runs/29-04_15-18/results/magic/fsm.gds
+string GDS_END 196990
+string GDS_START 112358
+<< end >>

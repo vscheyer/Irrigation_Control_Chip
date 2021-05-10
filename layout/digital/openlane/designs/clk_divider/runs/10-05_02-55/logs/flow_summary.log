@@ -1,0 +1,69 @@
+[INFO]: Current run directory is /openLANE_flow/designs/clk_divider/runs/10-05_02-55
+[INFO]: Preparing LEF Files
+[INFO]: Extracting the number of available metal layers from /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef
+[INFO]: The number of available metal layers is 6
+[INFO]: The available metal layers are li1 met1 met2 met3 met4 met5
+[INFO]: Merging LEF Files...
+[INFO]: Trimming Liberty...
+[INFO]: Generating Exclude List...
+[INFO]: Storing configs into config.tcl ...
+[INFO]: Preparation complete
+[INFO]: Running Synthesis...
+[INFO]: current step index: 1
+[ERROR]: during executing: "yosys -c /openLANE_flow/scripts/synth.tcl -l /openLANE_flow/designs/clk_divider/runs/10-05_02-55/logs/synthesis/1-yosys.log |& tee >&@stdout"
+[ERROR]: Exit code: 1
+[ERROR]: Last 10 lines:
+child process exited abnormally
+
+[ERROR]: Please check yosys  log file
+[ERROR]: Dumping to /openLANE_flow/designs/clk_divider/runs/10-05_02-55/error.log
+[INFO]: Calculating Runtime From the Start...
+[INFO]: Flow failed for clk_divider/10-05_02-55 in 0h0m0s
+[INFO]: Generating Final Summary Report...
+[INFO]: Design Name: clk_divider
+Run Directory: /openLANE_flow/designs/clk_divider/runs/10-05_02-55
+Source not found.
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/designs/clk_divider/runs/10-05_02-55/results/lvs/clk_divider.lvs_parsed.gds.log
+Source not found.
+----------------------------------------
+
+Antenna Summary:
+No antenna report found.
+[INFO]: check full report here: /openLANE_flow/designs/clk_divider/runs/10-05_02-55/reports/final_summary_report.csv
+[ERROR]: Flow Failed.
+[WARNING]: A run for clk_divider with tag '10-05_02-55' already exists. Pass -overwrite option to overwrite it
+[INFO]: Now you can run commands that pick up where '10-05_02-55' left off
+[INFO]: Current run directory is /openLANE_flow/designs/clk_divider/runs/10-05_02-55
+[INFO]: Sourcing /openLANE_flow/designs/clk_divider/runs/10-05_02-55/config.tcl
+Any changes to the DESIGN config file will NOT be applied
+[INFO]: Storing configs into config.tcl ...
+[INFO]: Preparation complete
+[INFO]: Running Synthesis...
+[INFO]: current step index: 2
+[ERROR]: during executing: "yosys -c /openLANE_flow/scripts/synth.tcl -l /openLANE_flow/designs/clk_divider/runs/10-05_02-55/logs/synthesis/2-yosys.log |& tee >&@stdout"
+[ERROR]: Exit code: 1
+[ERROR]: Last 10 lines:
+child process exited abnormally
+
+[ERROR]: Please check yosys  log file
+[ERROR]: Dumping to /openLANE_flow/designs/clk_divider/runs/10-05_02-55/error.log
+[INFO]: Calculating Runtime From the Start...
+[INFO]: Flow failed for clk_divider/10-05_02-55 in 0h0m2s
+[INFO]: Generating Final Summary Report...
+[INFO]: Design Name: clk_divider
+Run Directory: /openLANE_flow/designs/clk_divider/runs/10-05_02-55
+Source not found.
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/designs/clk_divider/runs/10-05_02-55/results/lvs/clk_divider.lvs_parsed.gds.log
+Source not found.
+----------------------------------------
+
+Antenna Summary:
+No antenna report found.
+[INFO]: check full report here: /openLANE_flow/designs/clk_divider/runs/10-05_02-55/reports/final_summary_report.csv
+[ERROR]: Flow Failed.

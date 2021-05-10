@@ -1,0 +1,179 @@
+CVC: Log output to /openLANE_flow/designs/clk_divider/runs/10-05_03-36/results/cvc/cvc_clk_divider.log
+CVC: Error output to /openLANE_flow/designs/clk_divider/runs/10-05_03-36/results/cvc/cvc_clk_divider.error.gz
+CVC: Debug output to /openLANE_flow/designs/clk_divider/runs/10-05_03-36/results/cvc/cvc_clk_divider.debug.gz
+CVC: Circuit Validation Check  Version 1.0.0
+CVC: Start: Mon May 10 03:39:57 2021
+
+Using the following parameters for CVC (Circuit Validation Check) from /openLANE_flow/scripts/cvc/sky130A/cvcrc.sky130A
+CVC_TOP = 'clk_divider'
+CVC_NETLIST = '/openLANE_flow/designs/clk_divider/runs/10-05_03-36/results/cvc/clk_divider.cdl'
+CVC_MODE = 'clk_divider'
+CVC_MODEL_FILE = '/openLANE_flow/scripts/cvc/sky130A/cvc.sky130A.models'
+CVC_POWER_FILE = '/openLANE_flow/designs/clk_divider/runs/10-05_03-36/results/cvc/clk_divider.power'
+CVC_FUSE_FILE = ''
+CVC_REPORT_FILE = '/openLANE_flow/designs/clk_divider/runs/10-05_03-36/results/cvc/cvc_clk_divider.log'
+CVC_REPORT_TITLE = 'CVC $CVC_TOP'
+CVC_CIRCUIT_ERROR_LIMIT = '100'
+CVC_SEARCH_LIMIT = '100'
+CVC_LEAK_LIMIT = '0.0002'
+CVC_SOI = 'false'
+CVC_SCRC = 'false'
+CVC_VTH_GATES = 'false'
+CVC_MIN_VTH_GATES = 'false'
+CVC_IGNORE_VTH_FLOATING = 'false'
+CVC_IGNORE_NO_LEAK_FLOATING = 'false'
+CVC_LEAK_OVERVOLTAGE = 'true'
+CVC_LOGIC_DIODES = 'false'
+CVC_ANALOG_GATES = 'true'
+CVC_BACKUP_RESULTS = 'false'
+CVC_MOS_DIODE_ERROR_THRESHOLD = '0'
+CVC_SHORT_ERROR_THRESHOLD = '0'
+CVC_BIAS_ERROR_THRESHOLD = '0'
+CVC_FORWARD_ERROR_THRESHOLD = '0'
+CVC_FLOATING_ERROR_THRESHOLD = '0'
+CVC_GATE_ERROR_THRESHOLD = '0'
+CVC_LEAK?_ERROR_THRESHOLD = '0'
+CVC_EXPECTED_ERROR_THRESHOLD = '0'
+CVC_OVERVOLTAGE_ERROR_THRESHOLD = '0'
+CVC_PARALLEL_CIRCUIT_PORT_LIMIT = '0'
+CVC_CELL_ERROR_LIMIT_FILE = ''
+CVC_CELL_CHECKSUM_FILE = ''
+CVC_LARGE_CIRCUIT_SIZE = '10000000'
+CVC_NET_CHECK_FILE = ''
+End of parameters
+
+CVC: Reading device model settings...
+CVC: Reading power settings...
+CVC: Parsing netlist /openLANE_flow/designs/clk_divider/runs/10-05_03-36/results/cvc/clk_divider.cdl
+Cdl fixed data size 44143
+Usage CDL: Time: 0  Memory: 7468  I/O: 8  Swap: 0
+CVC: Counting and linking...
+CVC: Assigning IDs ...
+Usage DB: Time: 0  Memory: 7728  I/O: 8  Swap: 0
+CVC: 2076(2076) instances, 564(564) nets, 4218(4218) devices.
+CVC: Setting models ...
+Setting model tolerances...
+CVC: Shorting switches...
+	Shorted 26 short
+Setting instance power...
+
+ModelList> filename /openLANE_flow/scripts/cvc/sky130A/cvc.sky130A.models
+ Model> nfet_01v8       2096 M->nmos       Parameters> Vth=0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 4-1 4-3
+ Model> pfet_01v8_hvt      2096 M->pmos       Parameters> Vth=-0.2 Vds=1.8 Vgs=1.8 R=L/W*7000 Diodes> 1-4 3-4
+ Model> short             26 R->switch_on  Parameters>
+ModelList> end
+
+Power List> filename /openLANE_flow/designs/clk_divider/runs/10-05_03-36/results/cvc/clk_divider.power
+ VPWR power 1.8 -> 1.8 power
+ VGND power 0.0 -> 0.0 power
+ clk~>std_input input std_input -> min@0.0 max@1.8 input family(std_input;)
+> expected values
+> macros
+ #define std_input min@VGND max@VPWR -> min@0.0 max@1.8
+Power List> end
+
+CVC: Linking devices...
+Usage EQUIV: Time: 0  Memory: 8432  I/O: 8  Swap: 0
+Power nets 7
+Hash dump:parameter->resistance map
+Contains 53 buckets, 29 elements
+Element count 0, 29
+Element count 1, 20
+Element count 2, 3
+Element count 3, 1
+Unused hash: 0.55, average depth 1.41
+Hash dump:text->circuit map
+Contains 337 buckets, 438 elements
+Element count 0, 91
+Element count 1, 123
+Element count 2, 78
+Element count 3, 27
+Element count 4, 14
+Element count 5, 2
+Element count 6, 2
+Unused hash: 0.27, average depth 2.34
+Hash dump:string->text map
+Contains 3209 buckets, 3330 elements
+Element count 0, 1170
+Element count 1, 1137
+Element count 2, 613
+Element count 3, 207
+Element count 4, 65
+Element count 5, 16
+Element count 6, 1
+Unused hash: 0.36, average depth 2.08
+CVC: Shorting non conducting resistors...
+CVC: Calculating resistor voltages...
+Usage RES: Time: 0  Memory: 8432  I/O: 8  Swap: 0
+Power nets 7
+CVC: Calculating min/max voltages...
+Processing trivial nets found 179 trivial nets
+CVC: Ignoring invalid calculations...
+CVC:   Removed 0 calculations
+Copying master nets
+CVC: Ignoring non-conducting devices...
+CVC:   Ignored 0 devices
+Usage MIN/MAX1: Time: 0  Memory: 8432  I/O: 16  Swap: 0
+Power nets 180
+! Checking forward bias diode errors: 
+
+! Checking nmos source/drain vs bias errors: 
+
+! Checking nmos gate vs source errors: 
+
+! Checking pmos source/drain vs bias errors: 
+
+! Checking pmos gate vs source errors: 
+
+Usage ERROR: Time: 0  Memory: 8432  I/O: 16  Swap: 0
+CVC: Propagating Simulation voltages 1...
+Usage SIM1: Time: 0  Memory: 8432  I/O: 16  Swap: 0
+Power nets 180
+CVC: Propagating Simulation voltages 3...
+Usage SIM2: Time: 0  Memory: 8432  I/O: 16  Swap: 0
+Power nets 180
+Added 0 latch voltages
+CVC: Calculating min/max voltages...
+Processing trivial nets found 179 trivial nets
+CVC: Ignoring invalid calculations...
+CVC:   Removed 0 calculations
+Copying master nets
+CVC: Ignoring non-conducting devices...
+CVC:   Ignored 0 devices
+Usage MIN/MAX2: Time: 0  Memory: 8432  I/O: 16  Swap: 0
+Power nets 353
+! Checking overvoltage errors
+
+! Checking nmos possible leak errors: 
+
+! Checking pmos possible leak errors: 
+
+! Checking mos floating input errors:
+
+! Checking expected values:
+
+CVC: Error Counts
+CVC: Fuse Problems:         0
+CVC: Min Voltage Conflicts: 0
+CVC: Max Voltage Conflicts: 0
+CVC: Leaks:                 0
+CVC: LDD drain->source:     0
+CVC: HI-Z Inputs:           0
+CVC: Forward Bias Diodes:   0
+CVC: NMOS Source vs Bulk:   0
+CVC: NMOS Gate vs Source:   0
+CVC: NMOS Possible Leaks:   0
+CVC: PMOS Source vs Bulk:   0
+CVC: PMOS Gate vs Source:   0
+CVC: PMOS Possible Leaks:   0
+CVC: Overvoltage-VBG:       0
+CVC: Overvoltage-VBS:       0
+CVC: Overvoltage-VDS:       0
+CVC: Overvoltage-VGS:       0
+CVC: Unexpected voltage :   0
+CVC: Total:                 0
+Usage Total: Time: 0  Memory: 8956  I/O: 48  Swap: 0
+Virtual net update/access 4733/270212
+CVC: Log output to /openLANE_flow/designs/clk_divider/runs/10-05_03-36/results/cvc/cvc_clk_divider.log
+CVC: End: Mon May 10 03:39:57 2021
+

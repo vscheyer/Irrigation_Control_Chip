@@ -1,0 +1,48 @@
+OpenROAD 0.9.0 1415572a73
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Notice 0: Reading LEF file:  /openLANE_flow/designs/fsm/runs/04-05_14-36/tmp/merged_unpadded.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 440 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/fsm/runs/04-05_14-36/tmp/merged_unpadded.lef
+Notice 0: 
+Reading DEF file: /openLANE_flow/designs/fsm/runs/04-05_14-36/tmp/placement/18-resizer.def
+Notice 0: Design: fsm
+Notice 0:     Created 12 pins.
+Notice 0:     Created 169 components and 965 component-terminals.
+Notice 0:     Created 2 special nets and 0 connections.
+Notice 0:     Created 119 nets and 343 connections.
+Notice 0: Finished DEF file: /openLANE_flow/designs/fsm/runs/04-05_14-36/tmp/placement/18-resizer.def
+Design Stats
+--------------------------------
+total instances           169
+multi row instances         0
+fixed instances            59
+nets                      121
+design area            1901.8 u^2
+fixed area              153.9 u^2
+movable area            902.1 u^2
+utilization                52 %
+utilization padded         83 %
+rows                       16
+row height                2.7 u
+
+[WARNING DPL-0019] detailed placement failed on _166_
+Placement Analysis
+--------------------------------
+total displacement      155.7 u
+average displacement      0.9 u
+max displacement         27.1 u
+original HPWL          3448.7 u
+legalized HPWL         3560.1 u
+delta HPWL                  3 %
+
+[INFO DPL-0020] Mirrored 50 instances
+[INFO DPL-0021] HPWL before            3560.1 u
+[INFO DPL-0022] HPWL after             3481.7 u
+[INFO DPL-0023] HPWL delta               -2.2 %
+[WARNING DPL-0005] Overlap check failed (3).
+ _166_ overlaps _089_
+ _168_ overlaps _117_
+ _180_ overlaps _110_

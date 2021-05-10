@@ -1,0 +1,4 @@
+during executing: "openroad -exit /openLANE_flow/scripts/openroad/or_resizer.tcl |& tee >&@stdout /openLANE_flow/designs/fsm/runs/04-05_14-29/logs/placement/8-resizer.log"
+Last 10 lines:
+child process exited abnormally
+

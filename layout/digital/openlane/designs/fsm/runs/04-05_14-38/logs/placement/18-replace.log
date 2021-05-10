@@ -1,0 +1,209 @@
+OpenROAD 0.9.0 1415572a73
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Notice 0: Reading LEF file:  /openLANE_flow/designs/fsm/runs/04-05_14-38/tmp/merged_unpadded.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 440 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/fsm/runs/04-05_14-38/tmp/merged_unpadded.lef
+Notice 0: 
+Reading DEF file: /openLANE_flow/designs/fsm/runs/04-05_14-38/tmp/floorplan/17-pdn.def
+Notice 0: Design: fsm
+Notice 0:     Created 12 pins.
+Notice 0:     Created 160 components and 911 component-terminals.
+Notice 0:     Created 2 special nets and 0 connections.
+Notice 0:     Created 110 nets and 325 connections.
+Notice 0: Finished DEF file: /openLANE_flow/designs/fsm/runs/04-05_14-38/tmp/floorplan/17-pdn.def
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 5520 10880
+[INFO GPL-0005] CoreAreaUxUy: 49220 54400
+[INFO GPL-0006] NumInstances: 160
+[INFO GPL-0007] NumPlaceInstances: 101
+[INFO GPL-0008] NumFixedInstances: 59
+[INFO GPL-0009] NumDummyInstances: 0
+[INFO GPL-0010] NumNets: 110
+[INFO GPL-0011] NumPins: 335
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 55020 65740
+[INFO GPL-0014] CoreAreaLxLy: 5520 10880
+[INFO GPL-0015] CoreAreaUxUy: 49220 54400
+[INFO GPL-0016] CoreArea: 1901824000
+[INFO GPL-0017] NonPlaceInstsArea: 153897600
+[INFO GPL-0018] PlaceInstsArea: 967177600
+[INFO GPL-0019] Util(%): 55.33
+[INFO GPL-0020] StdInstsArea: 967177600
+[INFO GPL-0021] MacroInstsArea: 0
+Begin InitialPlace
+[InitialPlace]  Iter: 1 CG Error: 0.00000008 HPWL: 1324610
+[InitialPlace]  Iter: 2 CG Error: 0.00000008 HPWL: 1276626
+[InitialPlace]  Iter: 3 CG Error: 0.00000010 HPWL: 1281068
+[InitialPlace]  Iter: 4 CG Error: 0.00000011 HPWL: 1282154
+[InitialPlace]  Iter: 5 CG Error: 0.00000009 HPWL: 1285529
+End InitialPlace
+[INFO GPL-0031] FillerInit: NumGCells: 129
+[INFO GPL-0032] FillerInit: NumGNets: 110
+[INFO GPL-0033] FillerInit: NumGPins: 335
+[INFO GPL-0023] TargetDensity: 0.70
+[INFO GPL-0024] AveragePlaceInstArea: 9576015
+[INFO GPL-0025] IdealBinArea: 13680022
+[INFO GPL-0026] IdealBinCnt: 139
+[INFO GPL-0027] TotalBinArea: 1901824000
+[INFO GPL-0028] BinCnt: 8 8
+[INFO GPL-0029] BinSize: 5463 5440
+[INFO GPL-0030] NumBins: 64
+Begin NesterovInit
+End NesterovInit
+[NesterovSolve] Iter: 1 overflow: 0.842368 HPWL: 639694
+[NesterovSolve] Iter: 10 overflow: 0.752314 HPWL: 687910
+[NesterovSolve] Iter: 20 overflow: 0.745499 HPWL: 682751
+[NesterovSolve] Iter: 30 overflow: 0.754804 HPWL: 679880
+[NesterovSolve] Iter: 40 overflow: 0.760973 HPWL: 677277
+[NesterovSolve] Iter: 50 overflow: 0.780773 HPWL: 675824
+[NesterovSolve] Iter: 60 overflow: 0.782932 HPWL: 674975
+[NesterovSolve] Iter: 70 overflow: 0.782872 HPWL: 675122
+[NesterovSolve] Iter: 80 overflow: 0.781529 HPWL: 675720
+[NesterovSolve] Iter: 90 overflow: 0.777651 HPWL: 676334
+[NesterovSolve] Iter: 100 overflow: 0.774053 HPWL: 676981
+[NesterovSolve] Iter: 110 overflow: 0.773602 HPWL: 677569
+[NesterovSolve] Iter: 120 overflow: 0.775328 HPWL: 678097
+[NesterovSolve] Iter: 130 overflow: 0.776159 HPWL: 678513
+[NesterovSolve] Iter: 140 overflow: 0.774133 HPWL: 679907
+[NesterovSolve] Iter: 150 overflow: 0.768337 HPWL: 682519
+[NesterovSolve] Iter: 160 overflow: 0.75496 HPWL: 687771
+[NesterovSolve] Iter: 170 overflow: 0.739626 HPWL: 700104
+[NesterovSolve] Iter: 180 overflow: 0.706479 HPWL: 723342
+[NesterovSolve] Iter: 190 overflow: 0.685976 HPWL: 740916
+[NesterovSolve] Iter: 200 overflow: 0.654696 HPWL: 769333
+[NesterovSolve] Iter: 210 overflow: 0.615967 HPWL: 798429
+[NesterovSolve] Iter: 220 overflow: 0.575209 HPWL: 825439
+[NesterovSolve] Iter: 230 overflow: 0.539765 HPWL: 871773
+[NesterovSolve] Iter: 240 overflow: 0.496049 HPWL: 918705
+[NesterovSolve] Iter: 250 overflow: 0.440365 HPWL: 952995
+[NesterovSolve] Iter: 260 overflow: 0.389315 HPWL: 992119
+[NesterovSolve] Iter: 270 overflow: 0.336242 HPWL: 1026301
+[NesterovSolve] Iter: 280 overflow: 0.294219 HPWL: 1049451
+[NesterovSolve] Iter: 290 overflow: 0.253263 HPWL: 1071657
+[NesterovSolve] Iter: 300 overflow: 0.213996 HPWL: 1091497
+[NesterovSolve] Iter: 310 overflow: 0.17452 HPWL: 1109761
+[NesterovSolve] Iter: 320 overflow: 0.137726 HPWL: 1123940
+[NesterovSolve] Iter: 330 overflow: 0.111212 HPWL: 1140731
+[NesterovSolve] Finished with Overflow: 0.097886
+Warning: /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib line 32, default_operating_condition ss_100C_1v60 not found.
+Warning: /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib line 31, default_operating_condition ff_n40C_1v95 not found.
+create_clock [get_ports $::env(CLOCK_PORT)]  -name $::env(CLOCK_PORT)  -period $::env(CLOCK_PERIOD)
+set input_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+set output_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+puts "\[INFO\]: Setting output delay to: $output_delay_value"
+[INFO]: Setting output delay to: 10.0
+puts "\[INFO\]: Setting input delay to: $input_delay_value"
+[INFO]: Setting input delay to: 10.0
+set_max_fanout $::env(SYNTH_MAX_FANOUT) [current_design]
+set clk_indx [lsearch [all_inputs] [get_port $::env(CLOCK_PORT)]]
+#set rst_indx [lsearch [all_inputs] [get_port resetn]]
+set all_inputs_wo_clk [lreplace [all_inputs] $clk_indx $clk_indx]
+#set all_inputs_wo_clk_rst [lreplace $all_inputs_wo_clk $rst_indx $rst_indx]
+set all_inputs_wo_clk_rst $all_inputs_wo_clk
+# correct resetn
+set_input_delay $input_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] $all_inputs_wo_clk_rst
+#set_input_delay 0.0 -clock [get_clocks $::env(CLOCK_PORT)] {resetn}
+set_output_delay $output_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] [all_outputs]
+# TODO set this as parameter
+set_driving_cell -lib_cell $::env(SYNTH_DRIVING_CELL) -pin $::env(SYNTH_DRIVING_CELL_PIN) [all_inputs]
+set cap_load [expr $::env(SYNTH_CAP_LOAD) / 1000.0]
+puts "\[INFO\]: Setting load to: $cap_load"
+[INFO]: Setting load to: 0.01765
+set_load  $cap_load [all_outputs]
+No paths found.
+Startpoint: _172_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _172_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ _172_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                  0.03    0.18    0.18 ^ _172_/Q (sky130_fd_sc_hd__dfxtp_2)
+     3    0.00                           water_time[7] (net)
+                  0.03    0.00    0.18 ^ _150_/A (sky130_fd_sc_hd__and2_2)
+                  0.02    0.07    0.26 ^ _150_/X (sky130_fd_sc_hd__and2_2)
+     1    0.00                           _023_ (net)
+                  0.02    0.00    0.26 ^ _172_/D (sky130_fd_sc_hd__dfxtp_2)
+                                  0.26   data arrival time
+
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 ^ _172_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                         -0.02   -0.02   library hold time
+                                 -0.02   data required time
+-----------------------------------------------------------------------------
+                                 -0.02   data required time
+                                 -0.26   data arrival time
+-----------------------------------------------------------------------------
+                                  0.27   slack (MET)
+
+
+Startpoint: l_thresh[1] (input port clocked by clk)
+Endpoint: _181_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock clk (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                         10.00   10.00 ^ input external delay
+                  0.03    0.01   10.01 ^ l_thresh[1] (in)
+     1    0.01                           l_thresh[1] (net)
+                  0.03    0.00   10.01 ^ _084_/A (sky130_fd_sc_hd__inv_2)
+                  0.03    0.04   10.06 v _084_/Y (sky130_fd_sc_hd__inv_2)
+     1    0.00                           _042_ (net)
+                  0.03    0.00   10.06 v _085_/A2 (sky130_fd_sc_hd__a31o_2)
+                  0.09    0.42   10.48 v _085_/X (sky130_fd_sc_hd__a31o_2)
+     2    0.01                           _043_ (net)
+                  0.09    0.00   10.48 v _086_/C1 (sky130_fd_sc_hd__o211a_2)
+                  0.09    0.24   10.72 v _086_/X (sky130_fd_sc_hd__o211a_2)
+     2    0.01                           _007_ (net)
+                  0.09    0.00   10.72 v _089_/A (sky130_fd_sc_hd__or2_2)
+                  0.16    0.74   11.46 v _089_/X (sky130_fd_sc_hd__or2_2)
+     4    0.01                           _045_ (net)
+                  0.16    0.00   11.46 v _099_/A (sky130_fd_sc_hd__inv_2)
+                  0.10    0.14   11.60 ^ _099_/Y (sky130_fd_sc_hd__inv_2)
+     4    0.01                           _055_ (net)
+                  0.10    0.00   11.60 ^ _100_/C1 (sky130_fd_sc_hd__o211a_2)
+                  0.12    0.39   11.99 ^ _100_/X (sky130_fd_sc_hd__o211a_2)
+     3    0.01                           _012_ (net)
+                  0.12    0.00   11.99 ^ _123_/S (sky130_fd_sc_hd__mux2_2)
+                  0.08    0.67   12.66 v _123_/X (sky130_fd_sc_hd__mux2_2)
+     1    0.00                           _075_ (net)
+                  0.08    0.00   12.66 v _124_/B (sky130_fd_sc_hd__or3b_2)
+                  0.16    1.01   13.67 v _124_/X (sky130_fd_sc_hd__or3b_2)
+     1    0.00                           _076_ (net)
+                  0.16    0.00   13.67 v _146_/B (sky130_fd_sc_hd__or3_2)
+                  0.16    1.07   14.73 v _146_/X (sky130_fd_sc_hd__or3_2)
+     1    0.00                           _038_ (net)
+                  0.16    0.00   14.73 v _148_/A3 (sky130_fd_sc_hd__a31o_2)
+                  0.06    0.47   15.20 v _148_/X (sky130_fd_sc_hd__a31o_2)
+     1    0.00                           _024_ (net)
+                  0.06    0.00   15.20 v _181_/D (sky130_fd_sc_hd__dfxtp_2)
+                                 15.20   data arrival time
+
+                  0.00   50.00   50.00   clock clk (rise edge)
+                          0.00   50.00   clock network delay (ideal)
+                          0.00   50.00   clock reconvergence pessimism
+                                 50.00 ^ _181_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                         -0.29   49.71   library setup time
+                                 49.71   data required time
+-----------------------------------------------------------------------------
+                                 49.71   data required time
+                                -15.20   data arrival time
+-----------------------------------------------------------------------------
+                                 34.51   slack (MET)
+
+
+No paths found.
+wns 0.00
+tns 0.00

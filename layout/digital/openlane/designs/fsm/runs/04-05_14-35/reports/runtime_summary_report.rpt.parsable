@@ -1,0 +1,8 @@
+0-prep 0.53
+1-yosys 1.746
+2-opensta 1.448
+3-verilog2def_openroad 1.818
+4-ioPlacer 1.429
+5-tapcell 1.425
+6-klayout_scrot 4.546
+7-pdn 1.8439999999999999

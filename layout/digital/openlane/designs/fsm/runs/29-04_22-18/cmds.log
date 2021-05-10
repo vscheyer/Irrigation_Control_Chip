@@ -1,0 +1,36 @@
+Thu Apr 29 22:18:36 UTC 2021 - Executing "python3 /openLANE_flow/scripts/extract_metal_layers.py -t /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef -o /openLANE_flow/designs/fsm/runs/29-04_22-18/tmp/met_layers_list.txt"
+
+Thu Apr 29 22:18:36 UTC 2021 - Executing "/openLANE_flow/scripts/mergeLef.py -i /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef {/home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__fill_12.lef /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__fakediode_2.lef /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__decap_12.lef} -o /openLANE_flow/designs/fsm/runs/29-04_22-18/tmp/merged_unpadded.lef |& tee >&@stdout"
+
+Thu Apr 29 22:18:36 UTC 2021 - Executing "/openLANE_flow/scripts/libtrim.pl /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib /openLANE_flow/designs/fsm/runs/29-04_22-18/tmp/trimmed.lib.exclude.list > /openLANE_flow/designs/fsm/runs/29-04_22-18/tmp/trimmed.lib"
+
+Thu Apr 29 22:18:36 UTC 2021 - Executing "echo {openlane v0.12} > /openLANE_flow/designs/fsm/runs/29-04_22-18/OPENLANE_VERSION"
+
+Thu Apr 29 22:18:36 UTC 2021 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openLANE_flow/designs/fsm/runs/29-04_22-18/tmp/sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Thu Apr 29 22:18:36 UTC 2021 - Executing "yosys -c /openLANE_flow/scripts/synth.tcl -l /openLANE_flow/designs/fsm/runs/29-04_22-18/logs/synthesis/1-yosys.log |& tee >&@stdout"
+
+Thu Apr 29 22:18:38 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/fsm\/runs\/29-04_22-18\/results\/synthesis\/fsm.synthesis.v/} /openLANE_flow/designs/fsm/runs/29-04_22-18/config.tcl"
+
+Thu Apr 29 22:18:38 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /openLANE_flow/designs/fsm/runs/29-04_22-18/config.tcl"
+
+Thu Apr 29 22:18:38 UTC 2021 - Executing "sed -i /defparam/d /openLANE_flow/designs/fsm/runs/29-04_22-18/results/synthesis/fsm.synthesis.v"
+
+Thu Apr 29 22:18:38 UTC 2021 - Executing "sta /openLANE_flow/scripts/sta.tcl |& tee >&@stdout /openLANE_flow/designs/fsm/runs/29-04_22-18/logs/synthesis/2-opensta"
+
+Thu Apr 29 22:18:39 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_floorplan.tcl |& tee >&@stdout /openLANE_flow/designs/fsm/runs/29-04_22-18/logs/floorplan/3-verilog2def.openroad.log"
+
+Thu Apr 29 22:18:41 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_ioplacer.tcl |& tee >&@stdout /openLANE_flow/designs/fsm/runs/29-04_22-18/logs/floorplan/4-ioPlacer.log"
+
+Thu Apr 29 22:18:42 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_tapcell.tcl |& tee >&@stdout /openLANE_flow/designs/fsm/runs/29-04_22-18/logs/floorplan/5-tapcell.log"
+
+Thu Apr 29 22:18:43 UTC 2021 - Executing "bash /openLANE_flow/scripts/klayout/scrotLayout.sh /home/vscheyer/pdks/openlane/pdks/sky130A/libs.tech/klayout/sky130A.lyt /openLANE_flow/designs/fsm/runs/29-04_22-18/results/floorplan/fsm.floorplan.def |& tee >&@stdout /openLANE_flow/designs/fsm/runs/29-04_22-18/logs/klayout/6-klayout.scrot.log"
+
+Thu Apr 29 22:18:47 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_pdn.tcl |& tee >&@stdout /openLANE_flow/designs/fsm/runs/29-04_22-18/logs/floorplan/7-pdn.log"
+
+Thu Apr 29 22:18:49 UTC 2021 - Executing "python3 /openLANE_flow/scripts/random_place.py --lef /openLANE_flow/designs/fsm/runs/29-04_22-18/tmp/merged_unpadded.lef --input-def /openLANE_flow/designs/fsm/runs/29-04_22-18/tmp/floorplan/7-pdn.def --output-def /openLANE_flow/designs/fsm/runs/29-04_22-18/tmp/placement/8-replace.def |& tee >&@stdout /openLANE_flow/designs/fsm/runs/29-04_22-18/logs/placement/8-replace.log"
+
+Thu Apr 29 22:18:49 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_resizer.tcl |& tee >&@stdout /openLANE_flow/designs/fsm/runs/29-04_22-18/logs/placement/8-resizer.log"
+
+Thu Apr 29 22:18:55 UTC 2021 - Executing "python3 /openLANE_flow/report_generation_wrapper.py -d /openLANE_flow/designs/fsm -dn fsm -t 29-04_22-18 -o /openLANE_flow/designs/fsm/runs/29-04_22-18/reports/final_summary_report.csv -m /openLANE_flow/designs/fsm/runs/29-04_22-18/reports/manufacturability_report.rpt -rs /openLANE_flow/designs/fsm/runs/29-04_22-18/reports/runtime_summary_report.rpt -r /openLANE_flow/designs/fsm/runs/29-04_22-18"
+

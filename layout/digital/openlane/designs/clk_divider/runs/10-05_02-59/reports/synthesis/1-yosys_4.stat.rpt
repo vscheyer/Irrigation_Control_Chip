@@ -1,0 +1,21 @@
+
+28. Printing statistics.
+
+=== clk_divider ===
+
+   Number of wires:                 67
+   Number of wire bits:             67
+   Number of public wires:          30
+   Number of public wire bits:      30
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 66
+     sky130_fd_sc_hd__buf_1          1
+     sky130_fd_sc_hd__conb_1        27
+     sky130_fd_sc_hd__dfxtp_2       29
+     sky130_fd_sc_hd__nor4_2         1
+     sky130_fd_sc_hd__or4_2          8
+
+   Chip area for module '\clk_divider': 804.521600
+

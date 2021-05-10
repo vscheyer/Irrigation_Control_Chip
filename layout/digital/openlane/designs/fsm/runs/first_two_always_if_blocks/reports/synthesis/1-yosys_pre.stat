@@ -1,0 +1,21 @@
+
+9. Printing statistics.
+
+=== fsm ===
+
+   Number of wires:                 17
+   Number of wire bits:             20
+   Number of public wires:          10
+   Number of public wire bits:      12
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 11
+     $_ANDNOT_                       4
+     $_NOR_                          2
+     $_ORNOT_                        1
+     $_OR_                           1
+     $_SDFFE_PP1P_                   1
+     $_SDFF_PP0_                     1
+     $_SDFF_PP1_                     1
+

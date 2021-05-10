@@ -1,0 +1,22 @@
+Mon May 10 02:55:29 UTC 2021 - Executing "python3 /openLANE_flow/scripts/extract_metal_layers.py -t /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef -o /openLANE_flow/designs/clk_divider/runs/10-05_02-55/tmp/met_layers_list.txt"
+
+Mon May 10 02:55:29 UTC 2021 - Executing "/openLANE_flow/scripts/mergeLef.py -i /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef {/home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__fill_12.lef /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__fakediode_2.lef /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__decap_12.lef} -o /openLANE_flow/designs/clk_divider/runs/10-05_02-55/tmp/merged_unpadded.lef |& tee >&@stdout"
+
+Mon May 10 02:55:29 UTC 2021 - Executing "/openLANE_flow/scripts/libtrim.pl /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib /openLANE_flow/designs/clk_divider/runs/10-05_02-55/tmp/trimmed.lib.exclude.list > /openLANE_flow/designs/clk_divider/runs/10-05_02-55/tmp/trimmed.lib"
+
+Mon May 10 02:55:29 UTC 2021 - Executing "echo {openlane v0.12} > /openLANE_flow/designs/clk_divider/runs/10-05_02-55/OPENLANE_VERSION"
+
+Mon May 10 02:55:29 UTC 2021 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openLANE_flow/designs/clk_divider/runs/10-05_02-55/tmp/sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Mon May 10 02:55:29 UTC 2021 - Executing "yosys -c /openLANE_flow/scripts/synth.tcl -l /openLANE_flow/designs/clk_divider/runs/10-05_02-55/logs/synthesis/1-yosys.log |& tee >&@stdout"
+
+Mon May 10 02:55:29 UTC 2021 - Executing "python3 /openLANE_flow/report_generation_wrapper.py -d /openLANE_flow/designs/clk_divider -dn clk_divider -t 10-05_02-55 -o /openLANE_flow/designs/clk_divider/runs/10-05_02-55/reports/final_summary_report.csv -m /openLANE_flow/designs/clk_divider/runs/10-05_02-55/reports/manufacturability_report.rpt -rs /openLANE_flow/designs/clk_divider/runs/10-05_02-55/reports/runtime_summary_report.rpt -r /openLANE_flow/designs/clk_divider/runs/10-05_02-55"
+
+Mon May 10 02:55:53 UTC 2021 - Executing "echo {openlane v0.12} > /openLANE_flow/designs/clk_divider/runs/10-05_02-55/OPENLANE_VERSION"
+
+Mon May 10 02:55:53 UTC 2021 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /home/vscheyer/pdks/openlane/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openLANE_flow/designs/clk_divider/runs/10-05_02-55/tmp/sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+
+Mon May 10 02:55:53 UTC 2021 - Executing "yosys -c /openLANE_flow/scripts/synth.tcl -l /openLANE_flow/designs/clk_divider/runs/10-05_02-55/logs/synthesis/2-yosys.log |& tee >&@stdout"
+
+Mon May 10 02:55:53 UTC 2021 - Executing "python3 /openLANE_flow/report_generation_wrapper.py -d /openLANE_flow/designs/clk_divider -dn clk_divider -t 10-05_02-55 -o /openLANE_flow/designs/clk_divider/runs/10-05_02-55/reports/final_summary_report.csv -m /openLANE_flow/designs/clk_divider/runs/10-05_02-55/reports/manufacturability_report.rpt -rs /openLANE_flow/designs/clk_divider/runs/10-05_02-55/reports/runtime_summary_report.rpt -r /openLANE_flow/designs/clk_divider/runs/10-05_02-55"
+

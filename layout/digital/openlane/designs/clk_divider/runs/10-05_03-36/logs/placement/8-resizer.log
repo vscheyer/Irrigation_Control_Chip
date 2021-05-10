@@ -1,0 +1,95 @@
+OpenROAD 0.9.0 1415572a73
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Warning: /openLANE_flow/designs/clk_divider/runs/10-05_03-36/tmp/resizer.lib line 32, default_operating_condition ss_100C_1v60 not found.
+Notice 0: Reading LEF file:  /openLANE_flow/designs/clk_divider/runs/10-05_03-36/tmp/merged_unpadded.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 440 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/clk_divider/runs/10-05_03-36/tmp/merged_unpadded.lef
+Notice 0: 
+Reading DEF file: /openLANE_flow/designs/clk_divider/runs/10-05_03-36/tmp/placement/8-replace.def
+Notice 0: Design: clk_divider
+Notice 0:     Created 4 pins.
+Notice 0:     Created 506 components and 1740 component-terminals.
+Notice 0:     Created 2 special nets and 0 connections.
+Notice 0:     Created 101 nets and 303 connections.
+Notice 0: Finished DEF file: /openLANE_flow/designs/clk_divider/runs/10-05_03-36/tmp/placement/8-replace.def
+create_clock [get_ports $::env(CLOCK_PORT)]  -name $::env(CLOCK_PORT)  -period $::env(CLOCK_PERIOD)
+set input_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+set output_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+puts "\[INFO\]: Setting output delay to: $output_delay_value"
+[INFO]: Setting output delay to: 10.0
+puts "\[INFO\]: Setting input delay to: $input_delay_value"
+[INFO]: Setting input delay to: 10.0
+set_max_fanout $::env(SYNTH_MAX_FANOUT) [current_design]
+set clk_indx [lsearch [all_inputs] [get_port $::env(CLOCK_PORT)]]
+#set rst_indx [lsearch [all_inputs] [get_port resetn]]
+set all_inputs_wo_clk [lreplace [all_inputs] $clk_indx $clk_indx]
+#set all_inputs_wo_clk_rst [lreplace $all_inputs_wo_clk $rst_indx $rst_indx]
+set all_inputs_wo_clk_rst $all_inputs_wo_clk
+# correct resetn
+set_input_delay $input_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] $all_inputs_wo_clk_rst
+#set_input_delay 0.0 -clock [get_clocks $::env(CLOCK_PORT)] {resetn}
+set_output_delay $output_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] [all_outputs]
+# TODO set this as parameter
+set_driving_cell -lib_cell $::env(SYNTH_DRIVING_CELL) -pin $::env(SYNTH_DRIVING_CELL_PIN) [all_inputs]
+set cap_load [expr $::env(SYNTH_CAP_LOAD) / 1000.0]
+puts "\[INFO\]: Setting load to: $cap_load"
+[INFO]: Setting load to: 0.01765
+set_load  $cap_load [all_outputs]
+[INFO RSZ-0028] Inserted 1 output buffers.
+[INFO RSZ-0039] Resized 65 instances.
+Design Stats
+--------------------------------
+total instances           507
+multi row instances         0
+fixed instances           406
+nets                      104
+design area           21087.7 u^2
+fixed area              773.2 u^2
+movable area           1021.0 u^2
+utilization                 5 %
+utilization padded          8 %
+rows                       53
+row height                2.7 u
+
+Placement Analysis
+--------------------------------
+total displacement      546.0 u
+average displacement      1.1 u
+max displacement         18.1 u
+original HPWL          1035.2 u
+legalized HPWL         1628.5 u
+delta HPWL                 57 %
+
+[INFO DPL-0020] Mirrored 38 instances
+[INFO DPL-0021] HPWL before            1628.5 u
+[INFO DPL-0022] HPWL after             1567.4 u
+[INFO DPL-0023] HPWL delta               -3.8 %
+[WARNING DPL-0005] Overlap check failed (25).
+ PHY_126 overlaps PHY_5
+ PHY_137 overlaps PHY_9
+ PHY_148 overlaps PHY_13
+ PHY_159 overlaps PHY_17
+ PHY_170 overlaps PHY_21
+ PHY_181 overlaps PHY_25
+ PHY_192 overlaps PHY_29
+ PHY_203 overlaps PHY_33
+ PHY_214 overlaps PHY_37
+ PHY_225 overlaps PHY_41
+ PHY_236 overlaps PHY_45
+ PHY_247 overlaps PHY_49
+ PHY_258 overlaps PHY_53
+ PHY_269 overlaps PHY_57
+ PHY_280 overlaps PHY_61
+ PHY_291 overlaps PHY_65
+ PHY_302 overlaps PHY_69
+ PHY_313 overlaps PHY_73
+ PHY_324 overlaps PHY_77
+ PHY_335 overlaps PHY_81
+ PHY_346 overlaps PHY_85
+ PHY_357 overlaps PHY_89
+ PHY_368 overlaps PHY_93
+ PHY_379 overlaps PHY_97
+ PHY_390 overlaps PHY_101
