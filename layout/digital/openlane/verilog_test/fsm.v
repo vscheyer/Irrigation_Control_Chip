@@ -11,11 +11,11 @@ Count to 10 minutes for light sensor
 
 module fsm
 (
-  input [7:0] m_sense,        // moisture sensor input from ADC
-  input [7:0] l_sense,        // light sensor input from ADC
-  input [7:0] m_thresh_1,     // moisture threshold from ADC
+  input [6:0] m_sense,        // moisture sensor input from ADC
+  input [6:0] l_sense,        // light sensor input from ADC
+  input [6:0] m_thresh_1,     // moisture threshold from ADC
   input [1:0] l_thresh,       // light threshold from ADC
-  input [7:0] water_time_in,  // length of time to water when little dry in clk units
+  input [6:0] water_time_in,  // length of time to water when little dry in clk units
   input clk,                  // clk in seconds from clk_divider
   output reg water_toggle,    // output of the system
   output reg [1:0] state      // keep track of fsm state
@@ -23,10 +23,10 @@ module fsm
 
 // reg [1:0] state;
 reg [3:0] light_sense_cnt;
-reg [7:0] water_time_cnt;
-reg [7:0] dawn_count;
-reg [7:0] dawn_timebox;       // length of time it's still considered dawn
-reg [7:0] m_thresh_2;
+reg [6:0] water_time_cnt;
+reg [6:0] dawn_count;
+reg [6:0] dawn_timebox;       // length of time it's still considered dawn
+reg [6:0] m_thresh_2;
 reg l_sense_prev;
 
 initial begin

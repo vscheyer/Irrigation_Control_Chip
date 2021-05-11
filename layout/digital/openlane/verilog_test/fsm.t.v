@@ -4,12 +4,12 @@
   if (val !== exp) $display("[FAIL] %s (got:b%b expected:b%b)", msg, val, exp);
 
 module testFSM();
-reg [7:0] m_sense;
-reg [7:0] l_sense;
-reg [7:0] m_thresh_1; //higher threshold, less severe drought
-reg [7:0] m_thresh_2; //lower threshold, indicates very dry
+reg [6:0] m_sense;
+reg [6:0] l_sense;
+reg [6:0] m_thresh_1; //higher threshold, less severe drought
+reg [6:0] m_thresh_2; //lower threshold, indicates very dry
 reg [1:0] l_thresh;
-reg [7:0] water_time_in; //length of time to water when little dry in clk units
+reg [6:0] water_time_in; //length of time to water when little dry in clk units
 reg clk;
 wire water_toggle;
 wire [1:0] state;
@@ -34,10 +34,10 @@ wire [1:0] state;
 
   initial begin
   l_thresh <= 00; //this is the light reg to check for 01
-  m_sense <= 8'd255; //start with moist soil
-  m_thresh_1 <= 8'd150;
-  m_thresh_2 <= 8'd100;
-  water_time_in = 8'd50;
+  m_sense <= 7'd127; //start with moist soil
+  m_thresh_1 <= 7'd100;
+  m_thresh_2 <= 7'd50;
+  water_time_in = 7'd50;
   end
 
   integer i;
