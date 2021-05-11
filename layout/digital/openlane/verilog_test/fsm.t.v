@@ -30,7 +30,7 @@ wire [1:0] state;
 
   // Generate clock
   initial clk=0;
-  always #10 clk = !clk;
+  always #1000000000 clk = !clk; //clk is in seconds
 
   initial begin
   l_thresh <= 00; //this is the light reg to check for 01
@@ -40,8 +40,10 @@ wire [1:0] state;
   water_time_in = 8'd50;
   end
 
+  integer i;
+
   initial begin
-  $dumpfile("shiftreg-dump.vcd");
+  $dumpfile("fsm-dump.vcd");
   $dumpvars();
   $display("FSM Test");
   $display("Expected state | Actual state | Expected water output | Actual water output");
@@ -61,8 +63,11 @@ wire [1:0] state;
   @(posedge clk)
   $display("10             | %b           | 1                     | %b                 ", state, water_toggle);
 
+  // Reset moisture sensor
+  m_sense = 8'd255;
+  l_thresh = 00;
   //Wait for watering to happen
-  #510
+  #3000
   $display("10             | %b           | 1                     | %b                 ", state, water_toggle);
 
 

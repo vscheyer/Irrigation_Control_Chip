@@ -2,29 +2,50 @@
 `define STANDBY_DAWN 2'd1
 `define WATERING 2'd2
 
+/*
+clk is at 32768 Hz
+clock divider takes it down to seconds
+Divide the seconds counter by 60 to get minutes
+Count to 10 minutes for light sensor
+*/
+
 module fsm
 (
-  input [7:0] m_sense,
-  input [7:0] l_sense,
-  input [7:0] m_thresh_1, //higher threshold, less severe drought
-  input [1:0] l_thresh,
-  input [7:0] water_time_in, //length of time to water when little dry in clk units
-  input clk,
-  output reg water_toggle,
-  output reg [1:0] state
+  input [7:0] m_sense,        // moisture sensor input from ADC
+  input [7:0] l_sense,        // light sensor input from ADC
+  input [7:0] m_thresh_1,     // moisture threshold from ADC
+  input [1:0] l_thresh,       // light threshold from ADC
+  input [7:0] water_time_in,  // length of time to water when little dry in clk units
+  input clk,                  // clk in seconds from clk_divider
+  output reg water_toggle,    // output of the system
+  output reg [1:0] state      // keep track of fsm state
 );
 
 // reg [1:0] state;
+reg [3:0] light_sense_cnt;
 reg [7:0] water_time_cnt;
 reg [7:0] dawn_count;
-reg [7:0] dawn_timebox; //length of time it's still considered dawn
+reg [7:0] dawn_timebox;       // length of time it's still considered dawn
 reg [7:0] m_thresh_2;
+reg l_sense_prev;
 
 initial begin
+
+  // Set initial state
   state <= `STANDBY;
+
+  // Set initial Outputs
   water_toggle <= 0;
-  m_thresh_2 <= m_thresh_1 - 8'd50;
+
+  // Zero the counters
+  light_sense_cnt <= 4'b0;
   water_time_cnt <= 0;
+
+  // Set second moisture threshold as offset from first one
+  m_thresh_2 <= m_thresh_1 - 8'd50;
+
+  // Set light sensor to keep track of past light level
+  l_sense_prev = l_sense;
 end
 
 always @(posedge clk) begin
