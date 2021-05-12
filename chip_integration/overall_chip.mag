@@ -1,0 +1,24 @@
+magic
+tech sky130A
+timestamp 1620791022
+use fsm  fsm_0
+timestamp 1620791022
+transform 1 0 -2704 0 1 6075
+box 0 0 15012 16084
+use clock  clock_0
+timestamp 1619709734
+transform 1 0 -25069 0 1 17860
+box 18690 1060 20165 3790
+use anADC  anADC_2
+timestamp 1620787225
+transform 1 0 -5735 0 1 17771
+box -10150 -2930 995 145
+use anADC  anADC_1
+timestamp 1620787225
+transform 1 0 -5702 0 1 13860
+box -10150 -2930 995 145
+use anADC  anADC_0
+timestamp 1620787225
+transform 1 0 -5702 0 1 10017
+box -10150 -2930 995 145
+<< end >>
