@@ -43,13 +43,12 @@ C {madvlsi/vdd.sym} 70 -850 0 0 {name=l7 lab=VDD}
 C {madvlsi/gnd.sym} 70 -760 0 0 {name=l8 lab=GND}
 C {devices/code_shown.sym} 420 -840 0 0 {name=SPICE only_toplevel=false value=".tran 1u 10m
 .save all"}
-C {/home/jonah/VLSI/final/clock.sym} 120 -140 0 0 {name=X1}
 C {devices/lab_pin.sym} 440 -400 2 0 {name=l1 sig_type=std_logic lab=clk}
 C {madvlsi/capacitor.sym} 560 -150 2 0 {name=C3
-value=22p
+value=60p
 m=1}
 C {madvlsi/capacitor.sym} 120 -150 2 0 {name=C4
-value=22p
+value=60p
 m=1}
 C {madvlsi/gnd.sym} 120 -100 0 0 {name=l2 lab=GND}
 C {madvlsi/gnd.sym} 560 -100 0 0 {name=l3 lab=GND}
@@ -62,3 +61,4 @@ value=".option wnflag=1
 .param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
+C {/home/jonah/VLSI/final/Irrigation_Control_Chip/analog/clock.sym} 120 -140 0 0 {name=X1}
