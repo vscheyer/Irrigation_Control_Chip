@@ -4,77 +4,54 @@
   if (val !== exp) $display("[FAIL] %s (got:b%b expected:b%b)", msg, val, exp);
 
 module testFSM();
-reg m_sense;
-reg l_sense;
-reg m_thresh_1; //higher threshold, less severe drought
-reg m_thresh_2; //lower threshold, indicates very dry
-reg [1:0] l_thresh;
-reg water_time_short; //length of time to water when little dry in clk units
-reg water_time_long;  //length of time to water when very dry in clk units
+reg [6:0] m_sense;
+reg [6:0] m_thresh; //higher threshold, less severe drought
+reg [6:0] water_time_in; //length of time to water when little dry in clk units
 reg clk;
 wire water_toggle;
 wire [1:0] state;
 
-  wire [1:0] MODE;
-  wire START;
-  wire misobuffCNTL;
-  wire [2:0] actualstate;
-
   fsm dut (.m_sense(m_sense),
-            .l_sense(l_sense),
-            .m_thresh_1(m_thresh_1),
-            .m_thresh_2(m_thresh_2),
-            .l_thresh(l_thresh),
-            .water_time_short(water_time_short),
-            .water_time_long(water_time_long),
+            .m_thresh(m_thresh),
+            .water_time_in(water_time_in),
             .clk(clk),
             .water_toggle(water_toggle),
             .state(state));
 
   // Generate clock
   initial clk=0;
-  always #10 clk = !clk;
+  always #1 clk = !clk; //clk is in seconds
 
   initial begin
-  l_thresh <= 00; //this is the light reg to check for 01
-  m_sense <= 0; //start with moist soil
-  m_thresh_1 <= 2;
-  m_thresh_2 <= 1;
+  m_sense <= 7'd127; //start with moist soil
+  m_thresh <= 7'd100;
+  water_time_in = 7'd3; //water for 5 minutes
   end
 
+  integer i;
+
   initial begin
-  $dumpfile("shiftreg-dump.vcd");
+  $dumpfile("fsm-dump.vcd");
   $dumpvars();
   $display("FSM Test");
+  $display("Expected state | Actual state | Expected water output | Actual water output");
 
-  /* // test 1
-  $display("state: %b", state);
+  // Initial conditions
   @(posedge clk);
-  $display("state: %b", state);
-  l_thresh = 01;
+  $display("00             | %b           | 0                     | %b                 ", state, water_toggle);
+
+  // Change light sensor input
+  m_sense = 7'd90;
   @(posedge clk)
-  // check that the state shifted
-    $display("water toggle: %b", water_toggle);
-    $display("state: %b", state);
-  `ASSERT_EQ(water_toggle, 0, "test 1");
-  */
+  $display("10             | %b           | 1                     | %b                 ", state, water_toggle);
 
-  $display("state: %b", state);
-  @(posedge clk);
-  $display("state: %b", state);
-  m_sense = 0.5;
+  // Wait for water to turn off
+  #10
   @(posedge clk)
-  // check that the state shifted
-    $display("water toggle: %b", water_toggle);
-    $display("state: %b", state);
-  `ASSERT_EQ(water_toggle, 0, "test 1");
+  @(posedge clk)
+  $display("00             | %b           | 0                     | %b                 ", state, water_toggle);
 
-  @(posedge clk);
-  m_sense = 0;
-  @(posedge clk);
-  $display("water toggle: %b", water_toggle);
-  $display("state: %b", state);
-  `ASSERT_EQ(water_toggle, 0, "test 1");
+
 
   $finish();
 
